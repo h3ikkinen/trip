@@ -1,0 +1,354 @@
+#couchsurfing {
+    .couchsurfing {
+        height: 89vh;
+        width: 100%;
+        background:url('../img/couschsurfing_bg.png') center no-repeat;
+        background-size: cover;
+        padding-top: 11vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .couchsurfing__slider-1 {
+            height: 250px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #fff;
+            font-size:55px;
+            width: 50px;
+            height: 50px;
+            top: 47%;
+        }
+        .swiper-button-next {
+            right: 0;
+        }
+        .swiper-button-prev {
+            left: 0;
+            padding-right: 30px;
+        }
+        .couchsurfing__swiper-container-1 {
+            margin: 0 auto;
+            width: 990px;
+            height: 230px;
+            margin-top: 10px;
+            position: absolute;
+            overflow: hidden;
+            .swiper-wrapper {
+                width: 810px;
+                
+                .swiper-slide {
+                    height: inherit;
+                    width: 330px !important;
+                    height: 230px !important;
+                    background: transparent;
+                    transition: .3s all ease-in-out;
+                    margin-top: 30px;
+                    img {
+                        width: 240px;
+                        height: 170px;
+                        transition: .3s all ease-in-out;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                .swiper-slide-next {
+                    width: 330px !important;
+                    height: 230px !important;
+                    margin-top: 0px;
+                    img {
+                        width: 330px;
+                        height: 230px;
+                    }
+                }
+                .swiper-slide-active {
+                    img {
+                        position: absolute;
+                        left: 28%;
+                    }
+                }
+            }
+        }
+        //slider 2 
+        .couchsurfing__slider-2 {
+            width: 980px;
+            margin-top: 5%;
+            .couchsurfing__swiper-container-2 {
+                width: 1000px;
+                height: 205px;
+                .swiper-button-next, .swiper-button-prev {
+                    color: #fff;
+                    font-size:1000px;
+                    top: 47%;
+                }
+                .swiper-button-next {
+                    right: -1%;
+                }
+                .swiper-button-prev {
+                    left: -1%;
+                }
+                .swiper-wrapper {
+                    .swiper-slide {
+                        transition: .2s all ease-in-out;
+                        height: 175px;
+                        width: 250px;
+                        background: transparent;
+                        img {
+                            transition: .2s all ease-in-out;
+                            height: 175px;
+                            width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    #couchsurfing {
+        .couchsurfing {
+            height: 89vh;
+            width: 100%;
+            background:url('../../img/couschsurfing_bg.png') center no-repeat;
+            background-size: cover;
+            padding-top: 11vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .couchsurfing__slider-2 {
+                width: 90vw;
+                margin-top: 5%;
+                .couchsurfing__swiper-container-2 {
+                    height: 205px;
+                    width: 90vw;
+                    .swiper-button-next, .swiper-button-prev {
+                        color: #fff;
+                        font-size:1000px;
+                        top: 47%;
+                    }
+                    .swiper-button-next {
+                        right: -1%;
+                    }
+                    .swiper-button-prev {
+                        left: -1%;
+                    }
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            transition: .2s all ease-in-out;
+                            height: 175px;
+                            width: 250px;
+                            background: transparent;
+                            img {
+                                transition: .2s all ease-in-out;
+                                height: 175px;
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+            }
+            .couchsurfing__slider-1 {
+                height: 250px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .swiper-button-next, .swiper-button-prev {
+                color: #fff;
+                font-size:55px;
+                width: 50px;
+                height: 50px;
+                top: 55%;
+            }
+            .swiper-button-next {
+                right: 0%;
+            }
+            .swiper-button-prev {
+                left: 0;
+                padding-right: 30px;
+            }
+            .couchsurfing__swiper-container-1 {
+                margin: 0 auto;
+                width: 330px;
+                height: 230px;
+                margin-top: 10px;
+                position: absolute;
+                overflow: hidden;
+                .swiper-wrapper {
+                    width: 330px;
+                    
+                    .swiper-slide {
+                        height: inherit;
+                        width: 330px !important;
+                        height: 230px !important;
+                        background: transparent;
+                        transition: .3s all ease-in-out;
+                        margin-top: 30px;
+                        img {
+                            width: 240px;
+                            height: 170px;
+                            transition: .3s all ease-in-out;
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                    .swiper-slide-next {
+                        width: 330px !important;
+                        height: 230px !important;
+                        margin-top: 0px;
+                        img {
+                            width: 330px;
+                            height: 230px;
+                        }
+                    }
+                    .swiper-slide-active {
+                        img {
+                            width: 330px !important;
+                            height: 230px !important;
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    #couchsurfing {
+        .couchsurfing {
+            min-height: 89vh;
+            width: 100%;
+            background:url('../../img/couschsurfing_bg.png') center no-repeat;
+            background-size: cover;
+            padding-top: 11vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .couchsurfing__slider-1 {
+                height: 250px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .swiper-button-next, .swiper-button-prev {
+                color: #fff;
+                font-size:55px;
+                width: 50px;
+                height: 50px;
+                top: 55%;
+            }
+            .swiper-button-next {
+                right: 0%;
+            }
+            .swiper-button-prev {
+                left: 0;
+                padding-right: 30px;
+            }
+            .couchsurfing__swiper-container-1 {
+                margin: 0 auto;
+                width: 330px;
+                height: 230px;
+                margin-top: 10px;
+                position: absolute;
+                overflow: hidden;
+                .swiper-wrapper {
+                    width: 330px;
+                    
+                    .swiper-slide {
+                        height: inherit;
+                        width: 330px !important;
+                        height: 230px !important;
+                        background: transparent;
+                        transition: .3s all ease-in-out;
+                        margin-top: 30px;
+                        img {
+                            width: 240px;
+                            height: 170px;
+                            transition: .3s all ease-in-out;
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                    .swiper-slide-next {
+                        width: 330px !important;
+                        height: 230px !important;
+                        margin-top: 0px;
+                        img {
+                            width: 330px;
+                            height: 230px;
+                        }
+                    }
+                    .swiper-slide-active {
+                        img {
+                            width: 330px !important;
+                            height: 230px !important;
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
+@media (max-height: 800px) {
+    #couchsurfing {
+        height: auto;
+        .couchsurfing {
+            .before-title {
+                font-size: 45px ;
+            }
+            .section-title {
+                font-size: 45px ;
+            } 
+        }
+    }
+}
+@media (max-height: 675px) {
+    #couchsurfing {
+        height: auto !important;
+        .couchsurfing {
+        height: auto !important;
+            .couchsurfing__slider-1 {
+                margin-top: 40px;
+            }
+            .couchsurfing__slider-2 {
+                margin-top: 70px;
+            }
+            .before-title {
+                font-size: 35px !important;
+            }
+            .section-title {
+                font-size: 45px !important;
+            } 
+        }
+    }
+}
+@media (max-width: 400px) {
+    #couchsurfing {
+        height: auto !important;
+        .couchsurfing {
+        height: auto !important;
+            .couchsurfing__slider-1 {
+                margin-top: 0px;
+            }
+            .couchsurfing__slider-2 {
+                margin-top: 70px;
+            }
+            .before-title {
+                font-size: 35px !important ;
+            }
+            .section-title {
+                font-size: 35px !important;
+            } 
+        }
+    }
+}

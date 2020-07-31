@@ -1,0 +1,357 @@
+.places {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    height:auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13vh;
+    overflow: hidden;
+    background-color:  #F9F7F7;
+    top: 0;
+    left: 0;
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        height: auto;
+        justify-content: space-around;
+        margin: 1%;
+        margin-bottom: 2%;
+        &-block {
+            display: flex;
+            justify-content: space-around;
+            margin: 1%;
+            align-items: center;
+            img {
+                user-select: none;
+                height: inherit;
+                width: 40%;
+            }
+        }
+        &-descr {
+            width: 30%;
+            h4 {
+                width: 125px;
+                font-size: 28px;
+                padding-bottom: 15px;
+                letter-spacing: 0.02em;
+                border-bottom:1px solid #013A71 ;
+                color: #013A71;
+            }
+            p {
+                padding-top: 10px;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 23px;
+
+                color: #000000;
+            }
+        }
+    }
+}
+.parallax__list {
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    .parallax_item {
+        display: inline-block;
+        &.plane {
+            width: 140px;
+            height: 140px;
+            background: url('../img/plane.png');
+            position: absolute;
+            bottom: 0;
+            left: 80%;
+            bottom: 75%;
+            left: 85%;
+            visibility: hidden;
+            opacity: 0;
+            &.active {
+                animation-name: plane;
+                animation-duration: 3s; 
+                animation-timing-function: linear;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        &.bag {
+            width: 90px;
+            height: 90px;
+            background: url('../img/bag.png');
+            position: absolute;
+            bottom: 0;
+            left: 85%;
+            bottom: 45%;
+            visibility: hidden;
+            opacity: 0;
+            
+            &.active {
+                animation-name: bag1;
+                animation-duration: 1s; 
+                animation-timing-function: linear;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        &.baloon {
+            width: 169px;
+            height: 169px;
+            background: url('../img/balloon.png');
+            position: absolute;
+            bottom: 0;
+            left: 7%;
+            bottom: 45%;
+            visibility: hidden;
+            opacity: 0;
+            &.active {
+                animation-name: baloon;
+                animation-duration: 3s; 
+                animation-timing-function: linear;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        &.arrows {
+            display: block;
+            width: 160px;
+            height: 160px;
+            background: url('../img/arrows.png');
+            position: absolute;
+            left: 85%;
+            bottom: 0%;
+            visibility: hidden;
+            opacity: 0;
+            &.active {
+                animation-name:table ;
+                animation-duration: 1s; 
+                animation-timing-function: linear;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+@keyframes plane {
+    0% {
+        bottom:65%;
+        left: -10%;
+
+    }
+    10% {
+        transform: rotate(35deg);
+    }
+    20% {
+        bottom: 65%;
+        left: 15%;
+       
+    }
+    30% {
+        transform: rotate(35deg);
+    }
+    40% {
+        bottom: 68%;
+        left: 35%;
+        
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    60% {
+        bottom: 75%;
+        left: 55%;
+        transform: rotate(30deg);
+    }
+    70% {
+        transform: rotate(70deg);
+    }
+    80% {
+        bottom: 65%;
+        left: 75%;
+    }
+    90% {
+        transform: rotate(0deg);
+    }
+    100% {
+        bottom: 75%;
+        left: 85%;
+    }
+}
+@keyframes bag1 {
+    0% {
+        bottom: 120%;
+        left: 85%;
+        transform: rotate(360deg);
+    }
+    100% {
+        left: 85%;
+        bottom: 45%;
+        transform: rotate(00deg);
+    }
+}
+@keyframes baloon {
+    0% {
+        left: 7%;
+        transform: rotate(-20deg);
+        bottom:120%;
+    }
+    20% {
+        left: 7%;
+        transform: rotate(20deg);
+        bottom:105%;
+    }
+    40%{
+        left: 7%;
+        transform: rotate(-20deg);
+        bottom:95%;
+    }
+    60% {
+        left: 7%;
+        transform: rotate(20deg);
+        bottom:80%;
+    }
+    80% {
+        left: 7%;
+        transform: rotate(-20deg);
+        bottom:65%;
+    }
+    100% {
+        left: 7%;
+        bottom: 45%;
+        transform: rotate(0deg);
+    }
+}
+@keyframes table {
+    0% {
+        bottom:-30%;
+        transform: rotate(-10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+        bottom:-10%;
+    }
+    50% {
+        transform: rotate(-10deg);
+        bottom:-10%;
+    }
+    75% {
+        bottom: 2%;
+        transform: rotate(10deg);
+    }
+    100% {
+        bottom: 0%;
+        transform: rotate(0deg);
+    }
+}
+@keyframes parallRotate{
+    0% {
+        transform: rotate(-20deg);
+    } 100% {
+        transform: rotate(20deg);
+    }
+}
+@media (max-width: 1200px) {
+    .parallax__list {
+        display: none;
+        .parallax_item {
+            display: none;
+        }
+    }
+    .places {
+        height: auto;
+        position: relative;
+        &__info {
+            width: 100%;
+            padding: 2%;
+            &-block {
+                width: 100%;
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1115px) {
+    .parallax__list {
+        display: none;
+        .parallax_item {
+            display: none;
+        }
+    }
+    .places {
+        padding-top: 2%;
+    }
+}
+@media (max-width: 900px) {
+    .places {
+
+        &__info {
+            width: 80%;
+            min-height: 100vh;
+            margin: 1%;
+            &-block {
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+                margin: 30px 0;
+                &.top {
+                    flex-direction: column-reverse;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            &-descr {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .places {
+        padding: 0%;
+        min-height:auto;
+        &__info {
+            width: 90%;
+            min-height:100vh;
+            &-block {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                &.top {
+                    flex-direction: column-reverse;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            &-descr {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h4 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.before-title {
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    user-select:none;
+    color: rgba(202, 209, 221, 0.9);
+    font-family: 'Caveat', cursive;
+    transform: rotate(-4.44deg);
+    margin: 1vh;
+    font-weight: bold;
+    &.blue {
+        color: #013A71;
+    }
+}
+.section-title {
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 0.02em;
+    margin: 1vh;
+    color: #013A71;
+    &.white {
+        color: #F9F7F7;
+    }
+}

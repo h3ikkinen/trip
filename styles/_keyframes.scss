@@ -1,0 +1,7 @@
+@keyframes fog {
+    0% {
+        transform: rotateZ(0deg) translate3d(0, 10%, 0) rotateZ(0deg);
+    } 100% {
+        transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    }
+}

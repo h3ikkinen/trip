@@ -47,6 +47,7 @@
                     background: transparent;
                     transition: .3s all ease-in-out;
                     margin-top: 30px;
+                    cursor: pointer;
                     img {
                         width: 240px;
                         height: 170px;
@@ -112,7 +113,7 @@
         .couchsurfing {
             height: 89vh;
             width: 100%;
-            background:url('../../img/couschsurfing_bg.png') center no-repeat;
+            background:url('../img/couschsurfing_bg.png') center no-repeat;
             background-size: cover;
             padding-top: 11vh;
             display: flex;
@@ -224,7 +225,7 @@
         .couchsurfing {
             min-height: 89vh;
             width: 100%;
-            background:url('../../img/couschsurfing_bg.png') center no-repeat;
+            background:url('../img/couschsurfing_bg.png') center no-repeat;
             background-size: cover;
             padding-top: 11vh;
             display: flex;
@@ -268,12 +269,14 @@
                         background: transparent;
                         transition: .3s all ease-in-out;
                         margin-top: 30px;
+                        cursor: pointer;
                         img {
                             width: 240px;
                             height: 170px;
                             transition: .3s all ease-in-out;
                             position: absolute;
                             left: 0;
+                            cursor: pointer;
                         }
                     }
                     .swiper-slide-next {

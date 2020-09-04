@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/fullpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.min.css">
+    <title>Document</title>
+</head>
+<body> 
+    <svg style="display: none;">
+        <symbol id="vector">
+          <g>
+             <path d="M69.5 210C62.6667 204.667 46.6 194.7 37 197.5C25 201 -43 237 52 312C63.5 319.5 170.213 391.997 221 182.5C229 
+                  149.5 301.99 145.876 327 144C347 142.5 344 114.9 318 116.5C292 118.1 295.833 67.1667 301 41.5001C306.234 15.5 263.7 -1.9 
+                  216.5 2.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 5"/>
+          </g>
+        </symbol>
+      </svg>
+      <header>
+        <div class="header__content">
+            <div class="burger-toggle">
+                <span></span>
+            </div>
+            <div class="burger-menu">
+                <ul class="burger_header-list" id="myMenu">
+                    <li class="burger-lnk" ><a href="#firstPage" ><img src="img/logo.png" alt="logo"></a></li>
+                    <li data-menuanchor="firstPage"  class="link__item burger-lnk"><a href="#firstPage">INTRO</a></li>
+                    <li data-menuanchor="secondPage" class="link__item burger-lnk"><a href="#secondPage">PLACES</a></li>
+                    <li data-menuanchor="thirdPage" class="link__item burger-lnk"><a href="#thirdPage">ROUTE</a></li>
+                    <li data-menuanchor="fourthPage" class="link__item burger-lnk"><a href="#fourthPage" >GUIDE</a></li>
+                    <li data-menuanchor="fifthPage" class="link__item burger-lnk"><a href="#fifthPage">COUCHSURFING</a></li>
+                    <li data-menuanchor="sixthPage" class="link__item burger-lnk"><a href="#sixthPage">EQUIPMENT</a></li>
+                    <li data-menuanchor="seventhPage" class="link__item burger-lnk"><a href="#seventhPage">SEARCH</a></li>
+                    <li data-menuanchor="eighthPage" class="link__item burger-lnk"><a href="#eighthPage">FEEDBACKS</a></li>
+                </ul>
+            </div>
+            <ul class="header__links" id="myMenu">
+                <li data-menuanchor="firstPage"  class="link__item"><a href="#firstPage">INTRO</a></li>
+                <li data-menuanchor="secondPage" class="link__item"><a href="#secondPage">PLACES</a></li>
+                <li data-menuanchor="thirdPage" class="link__item"><a href="#thirdPage">ROUTE</a></li>
+                <li data-menuanchor="fourthPage" class="link__item"><a href="#fourthPage" >GUIDE</a></li>
+                <li ><a href="#firstPage" ><img src="img/logo.png" alt="logo"></a></li>
+                
+                <li data-menuanchor="fifthPage" class="link__item"><a href="#fifthPage">COUCHSURFING</a></li>
+                <li data-menuanchor="sixthPage" class="link__item"><a href="#sixthPage">EQUIPMENT</a></li>
+                <li data-menuanchor="seventhPage" class="link__item burger-lnk"><a href="#seventhPage">SEARCH</a></li>
+                <li data-menuanchor="eighthPage" class="link__item burger-lnk"><a href="#eighthPage">FEEDBACKS</a></li>
+            </ul>
+    </header>
+      <div id="fullpage">
+        <section id="intro" class="intro_section section">
+            <div class="intro__wrapper ">
+                <div class="intro active layer" data-depth="0.10">
+                    <div class="fog__container" >
+                        <div class="fog__img fog__img--first" ></div>
+                        <div class="fog__img fog__img--second"></div>
+                      </div>
+                    <div class="wrapper_trans" data-depth="0.20">
+                        <div class="intro__transition" ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__content">
+                <div class="title">
+                    <h1>TRIP</h1>
+                </div>
+                <a data-menuanchor="secondPage" href="#secondPage"><button class="intro__btn">Let’s GO!</button></a>
+            </div>
+        </section>
+        <section class="section" id="places" >
+            <div class="places">
+                <ul class="parallax__list">
+                    <li data-depth="-0.2" class="parallax_item plane"></li>
+                    <li data-depth="0.1" class="parallax_item bag"></li>
+                    <li data-depth="-0.05" class="parallax_item baloon"></li>
+                    <li data-depth="0.04" class="parallax_item arrows"></li>
+                </ul>
+                <h3 class="before-title">Where to go?</h3>
+                <h2 class="section-title">PLACES</h2>
+                <div class="places__info">
+                    <div class="places__info-block top">
+                        <div class="places__info-descr">
+                            <h4>BALLI</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                 A diam turpis bibendum elementum porttitor. 
+                                 Arcu sollicitudin pellentesque sed aliquet pharetra, sed. 
+                                 Rutrum pharetra nulla scelerisque iaculis mi enim purus porta.
+                            </p>
+                        </div>
+                        <img src="img/descrBalli.png" alt="balli">
+                    </div>
+                    <div class="places__info-block bottom">
+                        <img src="img//descrAfrica.png" alt="">
+                        <div class="places__info-descr">
+                            <h4>AFRICA</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                 A diam turpis bibendum elementum porttitor. 
+                                 Arcu sollicitudin pellentesque sed aliquet pharetra, sed. 
+                                 Rutrum pharetra nulla scelerisque iaculis mi enim purus porta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="route">
+            <div class="route">
+                <h3 class="before-title blue">Your Trip!</h3>
+                <h2 class="section-title white">BUILDING A ROUTE</h2>
+                <div class="route_descr">
+                    <div class="route_descr_block">
+                        <h4>BALLI-AFRICA</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            A diam turpis bibendum elementum porttitor. Arcu sollicitudin
+                            pellentesque sed aliquet pharetra, sed. Rutrum pharetra nulla 
+                            celerisque iaculis mi enim purus porta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="guide" style="background-color: #f9f7f7;"> 
+            <div class="guide">
+                <ul class="parallax__list">
+                    <li data-depth="-0.01" class="parallax_item human"></li>
+                    <li data-depth="0.1" class="parallax_item bag"></li>
+                    <li data-depth="-0.05" class="parallax_item baloon"></li>
+                    <li data-depth="0.04" class="parallax_item arrows"></li>
+                </ul>
+                <h3 class="before-title ">I'll show you everything!</h3>
+                <h2 class="section-title ">EXPERIENCED GUIDE</h2>
+                <div class="slider">
+                    <div class="swiper-container__guide swiper-container">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="guide_slider__content">
+                                  <div class="rectangle">
+                                    <img src="img/guide_slide__guman.png" alt="human">
+                                  </div>
+                              </div>
+                              <span>Alex Wilson</span>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="guide_slider__content">
+                                <div class="rectangle">
+                                  <img src="img/guide_slide__guman.png" alt="human">
+                                </div>
+                            </div>
+                            <span>Alex Wilson</span>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="guide_slider__content">
+                                <div class="rectangle">
+                                  <img src="img/guide_slide__guman.png" alt="human">
+                                </div>
+                            </div>
+                            <span>Alex Wilson</span>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="guide_slider__content">
+                                <div class="rectangle">
+                                  <img src="img/guide_slide__guman.png" alt="human">
+                                </div>
+                            </div>
+                            <span>Alex Wilson</span>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="guide_slider__content">
+                                <div class="rectangle">
+                                  <img src="img/guide_slide__guman.png" alt="human">
+                                </div>
+                            </div>
+                            <span>Alex Wilson</span>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="guide_slider__content">
+                                <div class="rectangle">
+                                  <img src="img/guide_slide__guman.png" alt="human">
+                                </div>
+                            </div>
+                            <span>Alex Wilson</span>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="couchsurfing">
+            <div class="couchsurfing">
+                <h3 class="before-title blue">We will accommodate you comfortably!</h3>
+                <h2 class="section-title white">COUCHSURFING</h2>
+                <div class="couchsurfing__slider-1">
+                    <div class="couchsurfing__swiper-container-1 swiper-container">
+                        <div class="swiper-button-prev couchsurfing__slider-1-prev"></div> 
+                        <div class="swiper-button-next couchsurfing__slider-1-next"></div> 
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider1_slide-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider1_slide-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider1_slide-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider1_slide-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider1_slide-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider1_slide-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="couchsurfing__slider-2">
+                    <div class="couchsurfing__swiper-container-2 swiper-container">
+                        <div class="swiper-button-prev couchsurfing__slider-2-prev"></div> 
+                        <div class="swiper-button-next couchsurfing__slider-2-next"></div> 
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-1.png" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-2.png" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-3.png" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-4.png" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-5.png" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-1.png" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-2.png" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-3.png" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-4.png" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ch_slider2_slide-5.png" alt="slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="equipment">
+            <div class="equipment">
+                <h3 class="before-title">Always high quality!</h3>
+                <h2 class="section-title">EQUIPMENT</h2>
+                <div class="tabs">
+                    <div class="tab_1">
+                        <div class="tabs_image">
+                            <div class="tabcontent">
+                                <img src="img/backpack_1.png" alt="">
+                            </div>
+                            <div class="tabcontent">
+                                <img src="img/backpack_1.png" alt="">
+                            </div>
+                            <div class="tabcontent">
+                                <img src="img/backpack_1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs_descr">
+                            <h3>BACKPACK</h3>
+                            <div class="tabheader__items">
+                                <div class="tabheader__item swamp"></div>
+                                <div class="tabheader__item green"></div>
+                                <div class="tabheader__item blue"></div>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Eu, at magna auctor imperdiet hendrerit et nibh posuere 
+                                arcu. Lacus nullam est luctus sed aenean. Hendrerit.
+                            </p>
+                        </div>
+                    </div>
+                    <span class="line"></span>
+                    <div class="tabs__right">
+                        <div class="tab_2">
+                            <div class="tabs_image_2">
+                                <div class="tabcontent_2">
+                                    <img src="img/tent_1.png" alt="">
+                                </div>
+                                <div class="tabcontent_2">
+                                    <img src="img/tent_1.png" alt="">
+                                </div>
+                                <div class="tabcontent_2">
+                                    <img src="img/tent_1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="tabs_descr_2">
+                                <h3>TENT</h3>
+                                <div class="tabheader__items_2">
+                                    <div class="tabheader__item_2 swamp"></div>
+                                    <div class="tabheader__item_2 green"></div>
+                                    <div class="tabheader__item_2 blue"></div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Eu, at magna auctor imperdiet hendrerit et nibh posuere 
+                                    arcu. Lacus nullam est luctus sed aenean. Hendrerit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab_3">
+                            <div class="tabs_descr_3">
+                                <h3>BACKPACK</h3>
+                                <div class="tabheader__items_3">
+                                    <div class="tabheader__item_3 swamp"></div>
+                                    <div class="tabheader__item_3 green"></div>
+                                    <div class="tabheader__item_3 blue"></div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Eu, at magna auctor imperdiet hendrerit et nibh posuere 
+                                    arcu. Lacus nullam est luctus sed aenean. Hendrerit.
+                                </p>
+                            </div>
+                            <div class="tabs_image_3">
+                                <div class="tabcontent_3">
+                                    <img src="img/kayak_1.png" alt="">
+                                </div>
+                                <div class="tabcontent_3">
+                                    <img src="img/kayak_1.png" alt="">
+                                </div>
+                                <div class="tabcontent_3">
+                                    <img src="img/kayak_1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="search">
+            <div class="search">
+                <h3 class="before-title blue">Like-minded people!</h3>
+                <h2 class="section-title white">SEARCH FOR A TRAVEL COMPANION</h2>
+                <div class="searh_slider">
+                    <div class="swiper-button-prev searh-prev"></div> 
+                    <div class="swiper-container searh_slider-container">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-1.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-2.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-3.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-4.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-5.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-6.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-1.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-2.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-3.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-4.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-5.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/search_slide-6.png" alt="slide">
+                                <div class="slide_descr">
+                                    <span class="slide_descr-marks">“</span>
+                                    <p class="slide_descr-txt">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget netus massa tempus quam sed. Lectus dui.
+                                    </p>
+                                    <span class="slide_descr-marks">“</span>
+                                    <span class="slide_descr-name">Name Surname</span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-next searh-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="feedback">
+            <div class="feedback">
+                <h3 class="before-title">I advise everyone!</h3>
+                <h2 class="section-title">FEEDBACKS</h2>
+                <div class="feedback__block">
+                    <div class="feedback__block-left">
+                        <div class="feedback__block-item">
+                            <div class="feedback__block-item_top">
+                                <img src="img/av1.png" alt="" class="av">
+                                <span class="feedback__descr">SUPER ORGANIZATION!</span>
+                            </div>
+                            <p class="feedback-txt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio 
+                                elementum magna nisl ullamcorper. Etiam suspendisse augue sed 
+                                suspendisse orci ullamcorper in pellentesque fermentum. Eget praesent
+                                 risus tempus, tortor ullamcorper in turpis 
+                            </p>
+                        </div>
+                        <div class="feedback__block-item">
+                            <div class="feedback__block-item_top">
+                                <img src="img/av2.png" alt="" class="av">
+                                <span class="feedback__descr">I RECOMMEND IT!</span>
+                            </div>
+                            <p class="feedback-txt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio 
+                                elementum magna nisl ullamcorper. Etiam suspendisse augue sed 
+                                suspendisse orci ullamcorper in pellentesque fermentum. Eget praesent
+                                 risus tempus, tortor ullamcorper in turpis 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback__block-right">
+                        <div class="feedback__block-item">
+                            <div class="feedback__block-item_top">
+                                <img src="img/av3.png" alt="" class="av">
+                                <span class="feedback__descr">WHAT A VACATION!</span>
+                            </div>
+                            <p class="feedback-txt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio 
+                                elementum magna nisl ullamcorper. Etiam suspendisse augue sed 
+                                suspendisse orci ullamcorper in pellentesque fermentum. Eget praesent
+                                 risus tempus, tortor ullamcorper in turpis 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class=" section fp-auto-height">
+            <footer class="footer">
+                <video autoplay muted loop poster="media/footer_movie.mp4" class="fullscreen-bg__video">
+                    <!-- <source src="media/videoframe.webm" type="video/webm"> -->
+                    <source src="media/footer_movie.mp4" type="video/mp4">>
+                </video>
+                <div class="footer__content">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </footer>
+        </section>
+      </div>
+   
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/swiper-bundle.min.js"></script>
+    <script src="scripts/fullpage.extensions.min.js"></script>
+    <script src="scripts/fullpage.min.js"></script>
+    <script src="scripts/scrolloverflow.min.js"></script>
+    <script src="scripts/jquery.parallax.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
